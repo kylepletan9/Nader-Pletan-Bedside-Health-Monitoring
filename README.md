@@ -10,3 +10,21 @@ alert_bridge: what the caregiver laptop would run and forwards the information t
 pico_display_server: control the traffic light sensor and buzzer. Also publishes the html giving the display status. 
 
 main.py: code runs on the pico, collects data from the tilt switch, heart rate, and temperature sensors. communicates with final_project_sensing_client.py to classify temperature and make health metric decision
+
+final_project_sensing_clinet.py: client to be run on pc, classifies temperature value received from pico main.py and sends it back
+
+final_proj_data_collector.py: code used to collect temperature data samples for classifier
+
+final_project_trainer.py: trains the temperature data, outputs the best ML model, saves pickle file used in the final_project_sensing_client.py
+
+temp1.csv: human temperature data, 90 samples (1)
+
+temp2.csv: human temperature data, 90 samples (2)
+
+temp3.csv: human temperature data, 90 samples (3)
+
+temp4.csv: human temperature data, 90 samples (4)
+
+temp5.csv: human temperature data, 90 samples (5) 
+
+Random Forest_OPTIMAL_MODEL.sav: pickle file used for temperature classification
