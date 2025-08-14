@@ -8,3 +8,5 @@ mqtt_utils: a function that allows the user to send data remotely.
 alert_bridge: what the caregiver laptop would run and forwards the information to the display pico and sends warning or critical email to caregiver.
 
 pico_display_server: control the traffic light sensor and buzzer. Also publishes the html giving the display status. 
+
+main.py: code runs on the pico, collects data from the tilt switch, heart rate, and temperature sensors. communicates with final_project_sensing_client.py to classify temperature and make health metric decision
